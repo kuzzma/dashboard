@@ -22,21 +22,74 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Hello World</title>	
+        <script type="text/javascript" src="js/application.js"></script>
+        <link rel="stylesheet" href="http://dashboard.x-cart.com/assets/application.css">
+        <!--link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+-->
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+
+
+  <div id="container">
+      <script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  // Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+  Dashing.gridsterLayout('[{"col":1,"row":1},{"col":2,"row":1},{"col":4,"row":1},{"col":1,"row":2},{"col":1,"row":3},{"col":2,"row":2},{"col":4,"row":2}]')
+  Dashing.widget_base_dimensions = [372, 347]
+  Dashing.numColumns = 5
+  setTimeout(function () {window.location.reload()}, 30 * 60 * 1000)
+});
+</script>
+
+
+
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/logo.png"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+        <div class="release-xc4" data-id="release_xc4" data-view="Countdown" data-title="X-Cart 4.6.2 Deadline" data-end="28-Jan-2014 12:00:00" data-endstr="28 Jan 2014"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+        <div class="release-xc5" data-id="release_xc5" data-view="Countdown" data-title="X-Cart 5.0 Deadline" data-end="14-Jan-2014 12:00:00"  data-endstr="14 Jan 2014"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" data-moreinfo="Recent tweets with 'xcart' or 'x-cart' terms"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="facebook_likes" data-view="Number" data-title="Facebook Likes" data-moreinfo="https://facebook.com/xcart " style="background-color:#3b5998;"></div>
+      <i class="icon-facebook icon-background" style="font-size:240px;"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2" style="display: block;overflow: hidden">
+      <div class="bitbucket-xc4" data-id="bitbucket_4x" data-view="Bitbucket" data-title="X-Cart 4.x"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2" style="display: block;overflow: hidden">
+      <div class="bitbucket-xc5" data-id="bitbucket_5x" data-view="Bitbucket" data-title="X-Cart 5.x"></div>
+    </li>
+
+  </ul>
+</div>
+
+    </div>
+  
+         
+
+        
+        <script type="text/javascript" src="phonegap.js"></script> 
+        
         <script type="text/javascript">
             app.initialize();
-        </script>
+        </script> 
     </body>
 </html>
